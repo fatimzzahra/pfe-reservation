@@ -1,0 +1,136 @@
+.custom-bg {
+      background-image: url('../images/hotel-lobby.jpg');
+      background-size: cover;
+      background-position: center;
+  }
+  
+.form .plane, .statistic .plane{
+  transform: rotate(-45deg);
+}
+.slide-container {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .slide-wrapper {
+    display: flex;
+    animation: slide 10s linear infinite;
+
+  }
+
+  .slide {
+    flex: 0 0 auto;
+    width: 260px;
+    height: 212px;
+    scroll-snap-align: start;
+    transition: transform 0.5s ease-in-out;
+    
+  }
+
+ 
+
+  /*.slide-content {
+    width: 240px;
+    height: 138px;
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color: rgba(175, 206, 255, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 15px;
+  }*/
+
+  /*.slide img {
+    margin: auto;
+    border-radius: 20px;
+  }*/
+
+   .slide:hover {
+      transform: scale(1.1);
+        
+    }
+     .slide a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      color: inherit;
+      text-decoration: none;
+    }
+    @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-1700px);
+            }
+        }
+
+
+
+  .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.hotel .arrow{
+
+}
+.flights .flight{
+    border-radius: 90px;
+}
+.flights .content{
+    border-top-right-radius: 70px;
+}
+.dest .content{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev, .next {
+      cursor: pointer;
+      position: absolute;
+      bottom : -28%;
+      width: auto;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      user-select: none;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      z-index: 1;
+    }
+    .prev {
+      border-radius: 3px 0 0 3px;
+    }
+    
+    .next {
+      right: 133px;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    a{
+        text-decoration: none;
+    }
+
+  /* .offer .flex-item:nth-child(2),
+    .offer .flex-item:last-child  {
+    border-left: 1px solid black;
+    
+} */
+.offer .etoiles, .offer .arrow{
+    background-color: rgba(0, 0, 0, 0.4);
+}

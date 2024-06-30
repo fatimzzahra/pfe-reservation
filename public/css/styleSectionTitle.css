@@ -1,0 +1,26 @@
+/* .container {
+    margin: 2.5rem auto; 
+    padding: 0.5rem; 
+    margin-bottom: 3rem; 
+} */
+
+.section-header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+/* Line styles */
+.line {
+    flex-grow: 1; 
+    border-top: 2px solid #0E153A; 
+    margin: 0 1rem; 
+}
+
+/* Section title styles */
+.section-title {
+    text-align: center; 
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: #0E153A; 
+}s

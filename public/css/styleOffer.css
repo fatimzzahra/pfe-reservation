@@ -1,0 +1,48 @@
+.offer-slide {
+    position: relative;
+    width: 490px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.offer-slide img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.offer-slide img:not(:first-child) {
+    opacity: 0;
+}
+
+
+.best-offer .arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    line-height: 1.5rem;
+}
+.best-offer .pagination {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.best-offer .pagination-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.best-offer .pagination-circle.active {
+    background-color: white;
+}
+.best-offer .statistic-line:nth-child(1), .best-offer .statistic-line:nth-child(2){
+    border-right: 1px solid;
+}
