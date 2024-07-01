@@ -133,7 +133,7 @@
 
 
 <section>
-<div class="flex flex-wrap justify-center space-x-4 pb-4">
+<div class="flex flex-wrap justify-center space-x-4 pb-4 mb-20">
 
   <!-- <div class="max-w-xs bg-white rounded-lg shadow-md p-4">
     <div class="relative">
